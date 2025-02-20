@@ -15,7 +15,7 @@ namespace Camera
             _length = GetComponent<SpriteRenderer>().bounds.size.x;
         }
 
-        private void FixedUpdate()
+        private void LateUpdate()
         {
             float temp = (cameraMain.transform.position.x * (1 - parallaxEffect));
             float dist = (cameraMain.transform.position.x * parallaxEffect);
