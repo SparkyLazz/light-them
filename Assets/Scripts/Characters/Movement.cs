@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Characters
 {
@@ -18,9 +19,9 @@ namespace Characters
         [Header("Movement Settings")]
         public float moveSpeed;
         public float jumpForce;
+        public bool isBlessed;
         private bool _isGrounded;
         private float _moveInput;
-
         private void Update()
         {
             //Horizontal Movement
