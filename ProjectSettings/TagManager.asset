@@ -41,25 +41,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-<<<<<<< Updated upstream
-  - name: Backgrounds
-    uniqueID: 2674077905
-    locked: 0
-  - name: Ground Layers
-    uniqueID: 2882474015
-    locked: 0
-  - name: Player
-    uniqueID: 1983292105
-=======
   - name: Background
-    uniqueID: 74472255
+    uniqueID: 3269180711
     locked: 0
   - name: Ground Layer
-    uniqueID: 3884141293
+    uniqueID: 2368351063
     locked: 0
   - name: Player
-    uniqueID: 250878509
->>>>>>> Stashed changes
+    uniqueID: 2095080119
     locked: 0
   m_RenderingLayers:
   - Default
