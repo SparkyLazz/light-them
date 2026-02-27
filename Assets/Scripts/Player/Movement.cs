@@ -4,6 +4,8 @@ namespace Player
 {
     public class Movement : MonoBehaviour
     {
+        private static readonly int IsGrounded = Animator.StringToHash("isGrounded");
+
         [Header("Movement Settings")]
         public Rigidbody2D rb;
         public float speed;
@@ -14,10 +16,11 @@ namespace Player
         public Transform groundCheckTransform;
         public Vector2 groundCheckBoxSize;
 
-
-        //Private Variables
+        [Header("Animation Settings")]
+        public Animator animator;
+        
         private float _horizontal;
-        private bool _isFacingRight;
+        private bool _isFacingRight = true;
         private bool _jumpPressed;
         private bool _isGrounded;
         // Start is called before the first frame update
@@ -30,8 +33,13 @@ namespace Player
         {   
             _horizontal = Input.GetAxisRaw("Horizontal");
             _jumpPressed = Input.GetButtonDown("Jump");
+            
+            Flip(_horizontal);
             CheckGround();
             VerticalMove();
+            
+            animator.SetBool(IsGrounded, _isGrounded);
+            animator.SetFloat("Horizontal", Mathf.Abs(rb.linearVelocity.x));
         }
         private void FixedUpdate()
         {
@@ -58,6 +66,32 @@ namespace Player
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jump);
             }
+        }
+
+        void Flip(float horizontalInput)
+        {
+            // Don't flip if no input
+            if (horizontalInput == 0) return;
+
+            // If moving right but facing left
+            if (horizontalInput > 0 && !_isFacingRight)
+            {
+                PerformFlip();
+            }
+            // If moving left but facing right
+            else if (horizontalInput < 0 && _isFacingRight)
+            {
+                PerformFlip();
+            }
+        }
+        
+        void PerformFlip()
+        {
+            _isFacingRight = !_isFacingRight;
+
+            Vector3 scale = transform.localScale;
+            scale.x *= -1;
+            transform.localScale = scale;
         }
     }
 }
