@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="009ed681-40c6-4467-9dfa-a1524e036b7a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Light-Them/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Light-Them/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Animations/Player/Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Animations/Player/Idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Animations/Player/idle_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Animations/Player/idle_0.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Pixel Art/Characters/jump.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Pixel Art/Characters/jump.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Pixel Art/Characters/run.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Pixel Art/Characters/run.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Develop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Develop.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" afterDir="false" />
-    </list>
+    <list default="true" id="009ed681-40c6-4467-9dfa-a1524e036b7a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
