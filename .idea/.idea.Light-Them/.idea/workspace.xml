@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="009ed681-40c6-4467-9dfa-a1524e036b7a" name="Changes" comment="" />
+    <list default="true" id="009ed681-40c6-4467-9dfa-a1524e036b7a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Light-Them/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Light-Them/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Animations/Player/Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Animations/Player/Idle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Animations/Player/idle_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Animations/Player/idle_0.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Pixel Art/Characters/jump.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Pixel Art/Characters/jump.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Pixel Art/Characters/run.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Pixel Art/Characters/run.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Develop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Develop.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,18 +21,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "SparkyLazz"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SparkyLazz&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/SparkyLazz/Light-Them.git",
-    "accountId": "cc6e69be-aba4-4afb-b672-a097e1e666e3"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SparkyLazz/Light-Them.git&quot;,
+    &quot;accountId&quot;: &quot;cc6e69be-aba4-4afb-b672-a097e1e666e3&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Parallax/InfiniteParallax.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Parallax/ParallaxLayer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -33,6 +41,7 @@
     <setting file="mock://D:/Personal Projects/Unity Projects/Light-Them/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Personal Projects/Unity Projects/Light-Them/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
@@ -50,7 +59,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "#1 on Merging BasicFeature",
+    "git-widget-placeholder": "Animations",
     "junie.onboarding.icon.badge.shown": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -109,11 +118,21 @@
       <updated>1772173458177</updated>
       <workItem from="1772173461963" duration="697000" />
     </task>
+    <task id="LOCAL-00001">
+      <option name="closed" value="true" />
+      <created>1772175923781</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1772175923781</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityProjectDiscoverer">
     <option name="hasUnityReference" value="true" />
@@ -121,6 +140,17 @@
     <option name="unityProjectFolder" value="true" />
   </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
