@@ -157,6 +157,7 @@ GameObject:
   - component: {fileID: 8156925502764923468}
   - component: {fileID: 3342426028051767988}
   - component: {fileID: 1338794435393679542}
+  - component: {fileID: 7064006514913994379}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -197,7 +198,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 9679236b4b032f34996e013d5f5fd818, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -265,3 +266,15 @@ MonoBehaviour:
   groundCheckTransform: {fileID: 901752635912510406}
   groundCheckBoxSize: {x: 1, y: 1}
   animator: {fileID: 8861183573402065506}
+--- !u!114 &7064006514913994379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7804855398044874008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81ba66b717c8d374c9715c9d49fd5bbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player.Respawn
