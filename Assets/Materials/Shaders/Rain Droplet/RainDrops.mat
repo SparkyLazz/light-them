@@ -86,11 +86,11 @@ Material:
     - _Opacity: 1
     - _Parallax: 0.02
     - _Quality: 0
-    - _RainAmount: 0
+    - _RainAmount: 1
     - _Refraction: 0.05
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _Speed: 0
+    - _Speed: 3
     - _SrcBlend: 1
     - _Temperature: 1
     - _UVSec: 0

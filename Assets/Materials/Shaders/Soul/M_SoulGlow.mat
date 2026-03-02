@@ -46,7 +46,7 @@ Material:
     - _ShimmerScale: 10
     - _ShimmerSpeed: 5
     - _ShimmerStrength: 1
-    - _SpawnDuration: 1.2
+    - _SpawnDuration: 2
     - _SpawnTime: 1
     m_Colors:
     - _BurstColor: {r: 0.7, g: 0.9, b: 1, a: 1}
