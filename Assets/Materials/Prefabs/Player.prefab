@@ -158,8 +158,9 @@ GameObject:
   - component: {fileID: 3342426028051767988}
   - component: {fileID: 1338794435393679542}
   - component: {fileID: 7064006514913994379}
-  - component: {fileID: 3908689356701771836}
+  - component: {fileID: 2096693916629524821}
   - component: {fileID: 8635253544355698492}
+  - component: {fileID: 2914192723222776619}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -280,7 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81ba66b717c8d374c9715c9d49fd5bbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player.Respawn
---- !u!114 &3908689356701771836
+--- !u!114 &2096693916629524821
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -289,12 +290,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7804855398044874008}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba5b815291f944ac90e19a7c4125a845, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e44311cd4caa8b4d948cdc58cc0086c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Player.CurseSystem
-  toHalfSpeed: 0.1
-  toZeroSpeed: 0.5
-  extremeSpeed: 0.001
+  m_EditorClassIdentifier: Assembly-CSharp::Player.Attribute
+  maxHp: 100
+  currentHp: 0
+  baseDrainPerSecond: 1
+  regenPerSecond: 8
 --- !u!114 &8635253544355698492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,3 +313,18 @@ MonoBehaviour:
   soulPrefab: {fileID: 9023404710910517864, guid: eebf143aaa382cf4f88be7721e22225f, type: 3}
   spacing: 1
   visualController: {fileID: 0}
+--- !u!114 &2914192723222776619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7804855398044874008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba5b815291f944ac90e19a7c4125a845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player.CurseSystem
+  toHalfSpeed: 0.1
+  toZeroSpeed: 0.5
+  extremeSpeed: 0.001

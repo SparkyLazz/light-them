@@ -7,7 +7,7 @@ namespace Game
     {
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.TryGetComponent(out CurseSystem curse))
+            if (other.TryGetComponent(out CurseCollider curse))
             {
                 curse.EnterZone();
             }
@@ -15,7 +15,7 @@ namespace Game
 
         private void OnTriggerExit2D(Collider2D other)
         {
-            if (other.TryGetComponent(out CurseSystem curse))
+            if (other.TryGetComponent(out CurseCollider curse))
             {
                 curse.ExitZone();
             }

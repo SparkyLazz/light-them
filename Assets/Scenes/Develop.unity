@@ -2102,7 +2102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Renderer.CurseWorldController
   curseMaterial: {fileID: 2100000, guid: 2ea7d5ea4b4882d4096e75918f1537d1, type: 2}
-  curse: {fileID: 1928103169}
+  curse: {fileID: 2095887622}
 --- !u!114 &1366555897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7025,49 +7025,28 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1873449910 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7804855398044874008, guid: 1b9a3ebc4b601c84a8b1bf0b1bf769ac, type: 3}
-  m_PrefabInstance: {fileID: 1927017706792477965}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1928103163 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1745067931103480975, guid: 1b9a3ebc4b601c84a8b1bf0b1bf769ac, type: 3}
   m_PrefabInstance: {fileID: 1927017706792477965}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1928103168
+--- !u!114 &1928103168 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2096693916629524821, guid: 1b9a3ebc4b601c84a8b1bf0b1bf769ac, type: 3}
+  m_PrefabInstance: {fileID: 1927017706792477965}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1873449910}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e44311cd4caa8b4d948cdc58cc0086c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player.Attribute
-  maxHp: 100
-  currentHp: 0
-  baseDrainPerSecond: 1
-  regenPerSecond: 8
---- !u!114 &1928103169 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3908689356701771836, guid: 1b9a3ebc4b601c84a8b1bf0b1bf769ac, type: 3}
-  m_PrefabInstance: {fileID: 1927017706792477965}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1873449910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba5b815291f944ac90e19a7c4125a845, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Player.CurseSystem
 --- !u!114 &1928103170 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8635253544355698492, guid: 1b9a3ebc4b601c84a8b1bf0b1bf769ac, type: 3}
   m_PrefabInstance: {fileID: 1927017706792477965}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1873449910}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4be9a9ea651c8143aaf2bc72256f685, type: 3}
@@ -7232,6 +7211,17 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &2095887622 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2914192723222776619, guid: 1b9a3ebc4b601c84a8b1bf0b1bf769ac, type: 3}
+  m_PrefabInstance: {fileID: 1927017706792477965}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba5b815291f944ac90e19a7c4125a845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player.CurseSystem
 --- !u!1001 &1927017706792477965
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7288,6 +7278,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2096693916629524821, guid: 1b9a3ebc4b601c84a8b1bf0b1bf769ac, type: 3}
+      propertyPath: currentHp
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7804855398044874008, guid: 1b9a3ebc4b601c84a8b1bf0b1bf769ac, type: 3}
       propertyPath: m_Name
       value: Player
@@ -7299,10 +7293,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7804855398044874008, guid: 1b9a3ebc4b601c84a8b1bf0b1bf769ac, type: 3}
-      insertIndex: 5
-      addedObject: {fileID: 1928103168}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b9a3ebc4b601c84a8b1bf0b1bf769ac, type: 3}
 --- !u!1001 &3739481936470538344
 PrefabInstance:
@@ -7556,6 +7547,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3650579242148392027, guid: 2b7ea9e0d8572434cbf528db19b627c3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891331842671956935, guid: 2b7ea9e0d8572434cbf528db19b627c3, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7042017392989200706, guid: 2b7ea9e0d8572434cbf528db19b627c3, type: 3}

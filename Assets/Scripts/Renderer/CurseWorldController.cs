@@ -9,7 +9,7 @@ namespace Renderer
             Shader.PropertyToID("_CurseAmount");
 
         [SerializeField] private Material curseMaterial;
-        [SerializeField] private CurseSystem curse;
+        [SerializeField] private CurseCollider curse;
 
         private void Update()
         {

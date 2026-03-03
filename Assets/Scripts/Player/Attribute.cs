@@ -12,13 +12,13 @@ namespace Player
         public float baseDrainPerSecond = 5f;
         public float regenPerSecond = 8f;
 
-        private CurseSystem _curse;
+        private CurseCollider _curse;
 
         public float NormalizedHp => currentHp / maxHp;
 
         private void Awake()
         {
-            _curse = GetComponent<CurseSystem>();
+            _curse = GetComponent<CurseCollider>();
             currentHp = maxHp;
         }
 

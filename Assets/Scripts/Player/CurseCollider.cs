@@ -2,7 +2,7 @@
 
 namespace Player
 {
-    public class CurseSystem : MonoBehaviour
+    public class CurseCollider : MonoBehaviour
     {
         [Header("Speeds")]
         public float toHalfSpeed = 0.5f;       // outside → 0.5
