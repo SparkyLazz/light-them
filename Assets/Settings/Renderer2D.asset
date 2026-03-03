@@ -27,7 +27,8 @@ MonoBehaviour:
   m_RendererFeatures:
   - {fileID: 6207864937215370134}
   - {fileID: 6515046402277990441}
-  m_RendererFeatureMap: 9623530c45c426562960f7462f186a5a
+  - {fileID: 6085310960891270130}
+  m_RendererFeatureMap: 9623530c45c426562960f7462f186a5af213b7db135e7354
   m_UseNativeRenderPass: 0
   m_LayerMask:
     serializedVersion: 2
@@ -58,6 +59,20 @@ MonoBehaviour:
   m_PostProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   m_DefaultMaterialType: 0
   m_DefaultCustomMaterial: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+--- !u!114 &6085310960891270130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd5902cd6974315879f3993f3d1603a, type: 3}
+  m_Name: DeathRespawnRendererFeature
+  m_EditorClassIdentifier: Assembly-CSharp::Renderer.DeathRespawnRendererFeature
+  m_Active: 1
+  deathRespawnMaterial: {fileID: 2100000, guid: 3b3f57a6e4ab49c4ea3d4c8d902f86fe, type: 2}
 --- !u!114 &6207864937215370134
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -12,7 +12,7 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _QUALITY_LOW
+  - _QUALITY_HIGH
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -73,11 +73,19 @@ Material:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
+    - _DropSize: 1
     - _DstBlend: 0
+    - _FallRefraction: 0.0243
+    - _FallSpeed: 5
+    - _FocusFall: 8
+    - _FocusSlide: 4
     - _FogAmount: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _ImpactSharpness: 8
+    - _LayerCount: 2.98
+    - _LayerParallax: 1
     - _LightningFrequency: 0
     - _LightningIntensity: 0
     - _Metallic: 0
@@ -85,17 +93,22 @@ Material:
     - _OcclusionStrength: 1
     - _Opacity: 1
     - _Parallax: 0.02
-    - _Quality: 0
+    - _Quality: 2
     - _RainAmount: 0
     - _Refraction: 0.05
+    - _RefractionBlur: 3.85
+    - _SlideRefraction: 0.0429
+    - _SlideSpeed: 2
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _Speed: 0
     - _SrcBlend: 1
     - _Temperature: 1
+    - _TrailLength: 1
+    - _TrailWidth: 0.458
     - _UVSec: 0
     - _VignetteStrength: 0
-    - _WindStrength: 0
+    - _WindStrength: 0.023357492
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 0.30882353, g: 0.23615916, b: 0.23615916, a: 1}
