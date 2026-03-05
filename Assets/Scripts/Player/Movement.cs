@@ -5,6 +5,7 @@ namespace Player
     public class Movement : MonoBehaviour
     {
         private static readonly int IsGrounded = Animator.StringToHash("isGrounded");
+        private static readonly int Horizontal = Animator.StringToHash("Horizontal");
 
         [Header("Movement Settings")]
         public Rigidbody2D rb;
@@ -23,15 +24,17 @@ namespace Player
         private bool _isFacingRight = true;
         private bool _jumpPressed;
         private bool _isGrounded;
-        // Start is called before the first frame update
-        void Start()
+
+        private void Start()
         {
             rb = GetComponent<Rigidbody2D>();
         }
-        // Update is called once per frame
-        void Update()
+        
+        private void Update()
         {   
+            // ReSharper disable once Unity.UnknownInputAxes
             _horizontal = Input.GetAxisRaw("Horizontal");
+            // ReSharper disable once Unity.UnknownInputAxes
             _jumpPressed = Input.GetButtonDown("Jump");
             
             Flip(_horizontal);
@@ -39,17 +42,17 @@ namespace Player
             VerticalMove();
             
             animator.SetBool(IsGrounded, _isGrounded);
-            animator.SetFloat("Horizontal", Mathf.Abs(rb.linearVelocity.x));
+            animator.SetFloat(Horizontal, Mathf.Abs(rb.linearVelocity.x));
         }
         private void FixedUpdate()
         {
             HorizontalMove();
         }
-        void HorizontalMove()
+        private void HorizontalMove()
         {
             rb.linearVelocity = new Vector2(_horizontal * speed, rb.linearVelocity.y);
         }
-        void CheckGround()
+        private void CheckGround()
         {
             _isGrounded = Physics2D.BoxCast(
                 groundCheckTransform.position,
@@ -60,7 +63,7 @@ namespace Player
                 groundLayer
             );
         }
-        void VerticalMove()
+        private void VerticalMove()
         {
             if (_isGrounded && _jumpPressed)
             {
@@ -68,28 +71,23 @@ namespace Player
             }
         }
 
-        void Flip(float horizontalInput)
+        private void Flip(float horizontalInput)
         {
-            // Don't flip if no input
-            if (horizontalInput == 0) return;
-
-            // If moving right but facing left
-            if (horizontalInput > 0 && !_isFacingRight)
+            switch (horizontalInput)
             {
-                PerformFlip();
-            }
-            // If moving left but facing right
-            else if (horizontalInput < 0 && _isFacingRight)
-            {
-                PerformFlip();
+                case 0:
+                    return;
+                case > 0 when !_isFacingRight:
+                case < 0 when _isFacingRight:
+                    PerformFlip();
+                    break;
             }
         }
         
         void PerformFlip()
         {
             _isFacingRight = !_isFacingRight;
-
-            Vector3 scale = transform.localScale;
+            var scale = transform.localScale;
             scale.x *= -1;
             transform.localScale = scale;
         }

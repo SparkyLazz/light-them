@@ -250,6 +250,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2847457957912121730, guid: 838358f07d96ddb418afddddb5cb504e, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2957876859258468758, guid: 838358f07d96ddb418afddddb5cb504e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -293,6 +297,10 @@ PrefabInstance:
     - target: {fileID: 3204835456329516834, guid: 838358f07d96ddb418afddddb5cb504e, type: 3}
       propertyPath: m_SortingLayer
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4595164833978635859, guid: 838358f07d96ddb418afddddb5cb504e, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5288963015010883478, guid: 838358f07d96ddb418afddddb5cb504e, type: 3}
       propertyPath: m_Size.x
@@ -965,6 +973,14 @@ PrefabInstance:
     - target: {fileID: 5288963015010883478, guid: 838358f07d96ddb418afddddb5cb504e, type: 3}
       propertyPath: m_Tiles.Array.data[24].second.m_TileObjectToInstantiateIndex
       value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927226360642615469, guid: 838358f07d96ddb418afddddb5cb504e, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7049391614410544943, guid: 838358f07d96ddb418afddddb5cb504e, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7288285771801872517, guid: 838358f07d96ddb418afddddb5cb504e, type: 3}
       propertyPath: m_Name
