@@ -50,13 +50,13 @@ TagManager:
   - name: Player
     uniqueID: 2095080119
     locked: 0
-  - name: Decoration
+  - name: Grass
     uniqueID: 3473978073
     locked: 0
-  - name: Grass
+  - name: 
     uniqueID: 2493687665
     locked: 0
-  - name: Wall Stone
+  - name: 
     uniqueID: 2871644511
     locked: 0
   m_RenderingLayers:
