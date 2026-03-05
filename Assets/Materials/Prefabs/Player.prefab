@@ -160,6 +160,8 @@ GameObject:
   - component: {fileID: 2096693916629524821}
   - component: {fileID: 8635253544355698492}
   - component: {fileID: 2914192723222776619}
+  - component: {fileID: 7926883837704637041}
+  - component: {fileID: 4214743789752410361}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -315,3 +317,37 @@ MonoBehaviour:
   toHalfSpeed: 0.1
   toZeroSpeed: 0.5
   extremeSpeed: 0.001
+  curseMaterial: {fileID: 0}
+  maxChromaticStrength: 0.03
+  maxChromaticPulse: 1
+  chromaticRampDuration: 5
+--- !u!114 &7926883837704637041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7804855398044874008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 899a44c9b49767547838afe6b6fd7874, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player.PlayerHealth
+  deathRespawnEffect: {fileID: 0}
+  soulSpawn: {fileID: 4214743789752410361}
+  respawnPoint: {fileID: 0}
+  respawnInvincibleTime: 0
+  voidYThreshold: -10
+  useVoidDeath: 1
+--- !u!114 &4214743789752410361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7804855398044874008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994889cc30354bcd9d0d24f69e7108b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.SoulSpawn

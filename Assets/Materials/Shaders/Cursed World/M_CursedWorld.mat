@@ -29,12 +29,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _ChromaticPulse: 1
-    - _ChromaticStrength: 0.03
+    - _ChromaticPulse: 0
+    - _ChromaticStrength: 0
     - _ClearingBrightness: 0
     - _ClearingRadius: 0
     - _ClearingSharpness: 1
-    - _CurseAmount: 0.8026025
+    - _CurseAmount: 0.5598282
     - _DesatSpeed: 2
     - _PulseAmount: 0.3
     - _PulseSpeed: 2.08

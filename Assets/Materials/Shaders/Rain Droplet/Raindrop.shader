@@ -20,7 +20,6 @@
 
         Pass {
             Name "RaindropPass"
-
             HLSLPROGRAM
             #pragma vertex   Vert
             #pragma fragment Frag

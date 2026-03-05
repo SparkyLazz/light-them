@@ -2,10 +2,8 @@
 
 namespace Game
 {
-    public class SoulSpawn : MonoBehaviour
+    public class PlayerSpawn : MonoBehaviour
     {
-        public Material soulMaterial;
-
         MaterialPropertyBlock _mpb;
         UnityEngine.Renderer _renderer;
 

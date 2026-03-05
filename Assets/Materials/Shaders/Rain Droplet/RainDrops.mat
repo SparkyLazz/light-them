@@ -83,6 +83,8 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _ImpactBrightness: 1.73
+    - _ImpactDuration: 0.1
     - _ImpactSharpness: 8
     - _LayerCount: 2.98
     - _LayerParallax: 1
@@ -103,12 +105,18 @@ Material:
     - _SpecularHighlights: 1
     - _Speed: 0
     - _SrcBlend: 1
+    - _StreakAngle: 0
+    - _StreakBrightness: 0.06
+    - _StreakCount: 30
+    - _StreakLength: 0.092
+    - _StreakSpeed: 0.46
+    - _StreakWidth: 0.0036
     - _Temperature: 1
     - _TrailLength: 1
     - _TrailWidth: 0.458
     - _UVSec: 0
     - _VignetteStrength: 0
-    - _WindStrength: 0.023357492
+    - _WindStrength: 0
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 0.30882353, g: 0.23615916, b: 0.23615916, a: 1}

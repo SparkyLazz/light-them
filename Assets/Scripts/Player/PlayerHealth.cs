@@ -11,7 +11,7 @@ namespace Player
     {
         [Header("Effects")]
         public DeathRespawnEffect deathRespawnEffect;
-        public SoulSpawn          soulSpawn;
+        public PlayerSpawn          soulSpawn;
 
         [Header("Respawn")]
         public Transform respawnPoint;
@@ -41,7 +41,7 @@ namespace Player
             _attribute = GetComponent<Attribute>();
 
             if (soulSpawn == null)
-                soulSpawn = GetComponent<SoulSpawn>();
+                soulSpawn = GetComponent<PlayerSpawn>();
 
             if (deathRespawnEffect != null)
             {

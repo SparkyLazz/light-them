@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Game
 {
-    public class Zone : MonoBehaviour
+    public class SafeZone : MonoBehaviour
     {
         private void OnTriggerEnter2D(Collider2D other)
         {
