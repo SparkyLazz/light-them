@@ -5,24 +5,24 @@ namespace Parallax
     
     public class InfiniteParallax : MonoBehaviour
     {
-        public Transform cameraTransform;
+        private Transform _cameraTransform;
         public float chunkWidth = 27f;
 
         private Transform _leftChunk;
         private Transform _middleChunk;
         private Transform _rightChunk;
 
-        void Start()
+        private void Awake()
         {
+            _cameraTransform = UnityEngine.Camera.main?.transform;
             _leftChunk = transform.GetChild(0);
             _middleChunk = transform.GetChild(1);
             _rightChunk = transform.GetChild(2);
         }
 
-        void Update()
+        private void Update()
         {
-            float cameraX = cameraTransform.position.x;
-
+            float cameraX = _cameraTransform.position.x;
             if (cameraX > _middleChunk.position.x + chunkWidth)
             {
                 MoveLeftToRight();
@@ -33,7 +33,7 @@ namespace Parallax
             }
         }
 
-        void MoveLeftToRight()
+        private void MoveLeftToRight()
         {
             Transform oldLeft = _leftChunk;
             _leftChunk = _middleChunk;
@@ -43,7 +43,7 @@ namespace Parallax
             _rightChunk.position = _middleChunk.position + Vector3.right * chunkWidth;
         }
 
-        void MoveRightToLeft()
+        private void MoveRightToLeft()
         {
             Transform oldRight = _rightChunk;
             _rightChunk = _middleChunk;

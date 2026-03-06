@@ -84,7 +84,7 @@ namespace Player
             }
         }
         
-        void PerformFlip()
+        private void PerformFlip()
         {
             _isFacingRight = !_isFacingRight;
             var scale = transform.localScale;
