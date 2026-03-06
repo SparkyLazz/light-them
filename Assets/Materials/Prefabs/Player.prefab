@@ -279,4 +279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player.Attribute
   currentSanity: 0
-  yPosition: 0
+  maxUnsafeTime: 60
+  healRate: 10
+  yPosition: -10
+  isSafe: 0
