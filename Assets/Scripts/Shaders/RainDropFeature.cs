@@ -1,0 +1,108 @@
+﻿// RaindropRenderFeature.cs
+// Unity 6 LTS – Universal Render Pipeline
+//
+// Setup:
+//   1. Create a Material from Custom/Raindrop_URP  (Right-click > Create > Material).
+//   2. Add this Renderer Feature to your URP Renderer asset.
+//   3. Drag the material into the "Raindrop Material" slot.
+//   4. Select the material in the Project window to tweak all shader properties in realtime.
+//
+// Requires "Intermediate Texture" = Always on the URP Renderer asset.
+
+using System;
+using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.RenderGraphModule;
+using UnityEngine.Rendering.Universal;
+
+public class RaindropRenderFeature : ScriptableRendererFeature
+{
+    [Tooltip("Material created from Custom/Raindrop_URP. Select it to edit all shader properties.")]
+    public Material raindropMaterial;
+
+    [Tooltip("Injection point in the URP frame.")]
+    public RenderPassEvent renderPassEvent = RenderPassEvent.BeforeRenderingPostProcessing;
+
+    private RaindropRenderPass _pass;
+
+    public override void Create()
+    {
+        _pass = new RaindropRenderPass(name)
+        {
+            renderPassEvent = renderPassEvent,
+        };
+    }
+
+    public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
+    {
+        if (raindropMaterial == null)
+        {
+            Debug.LogWarning("[RaindropRenderFeature] Assign a material created from Custom/Raindrop_URP.", this);
+            return;
+        }
+
+        _pass.Setup(raindropMaterial);
+        renderer.EnqueuePass(_pass);
+    }
+
+    protected override void Dispose(bool disposing)
+    {
+        _pass?.Dispose();
+    }
+}
+
+public sealed class RaindropRenderPass : ScriptableRenderPass, IDisposable
+{
+    private sealed class PassData
+    {
+        public TextureHandle src;
+        public Material      material;
+    }
+
+    private readonly string _tag;
+    private          Material _material;
+
+    public RaindropRenderPass(string tag)
+    {
+        _tag                        = tag;
+        requiresIntermediateTexture = true;
+    }
+
+    public void Setup(Material material)
+    {
+        _material = material;
+    }
+
+    public override void RecordRenderGraph(RenderGraph renderGraph, ContextContainer frameData)
+    {
+        var resourceData = frameData.Get<UniversalResourceData>();
+
+        if (resourceData.isActiveTargetBackBuffer)
+        {
+            Debug.LogWarning("[RaindropRenderPass] Set 'Intermediate Texture' to Always on the URP Renderer asset.");
+            return;
+        }
+
+        TextureHandle source = resourceData.activeColorTexture;
+
+        var desc         = renderGraph.GetTextureDesc(source);
+        desc.name        = "_RaindropOutput";
+        desc.clearBuffer = false;
+        TextureHandle dest = renderGraph.CreateTexture(desc);
+
+        using var builder = renderGraph.AddRasterRenderPass<PassData>(_tag, out var data);
+
+        data.src      = source;
+        data.material = _material;
+
+        builder.UseTexture(source);
+        builder.SetRenderAttachment(dest, 0);
+        builder.AllowPassCulling(false);
+        builder.SetRenderFunc(static (PassData d, RasterGraphContext ctx) =>
+            Blitter.BlitTexture(ctx.cmd, d.src, new Vector4(1f, 1f, 0f, 0f), d.material, 0));
+
+        resourceData.cameraColor = dest;
+    }
+
+    public void Dispose() { }
+}
