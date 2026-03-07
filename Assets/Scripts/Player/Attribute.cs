@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Shaders.CurseEffect;
+using UnityEngine;
 
 namespace Player
 {
@@ -20,11 +21,18 @@ namespace Player
 
         [Header("Player State")] 
         public bool isSafe;
+
+        [Header("Shader Settings")] 
+        public float effectFadeOutSpeed = 0.5f;
+        public float effectFadeInSpeed = 0.3f;
+        private float _currentIntensity;
+        private CurseEffectController _curseEffectController;
         
 
         private void Awake()
         {
             _respawnPoint = GameObject.FindGameObjectWithTag("Respawn").transform;
+            _curseEffectController = FindAnyObjectByType<CurseEffectController>();
         }
 
         private void Start()
@@ -40,6 +48,7 @@ namespace Player
         {
             CheckVoid();
             PerformSanity();
+            UpdateCurseEffect();
         }
         
         private void CheckVoid()
@@ -75,6 +84,27 @@ namespace Player
             }
         }
 
+        private void UpdateCurseEffect()
+        {
+            if (!_curseEffectController) return;
+            float target;
+
+            if (isSafe)
+            {
+                target = 0f;
+                //Slowly safe out when back into safe zone
+                _currentIntensity = Mathf.MoveTowards(_currentIntensity, target, effectFadeOutSpeed * Time.deltaTime);
+            }
+            else
+            {
+                float normalized = _unsafeTime / maxUnsafeTime;
+                target = Mathf.Clamp01(normalized * normalized);
+                
+                _currentIntensity = Mathf.MoveTowards(_currentIntensity, target, effectFadeInSpeed * Time.deltaTime);
+            }
+            _curseEffectController.ChangeIntensity(_currentIntensity);
+        }
+        
         private void OnSanityEmpty()
         {
             //Died Action

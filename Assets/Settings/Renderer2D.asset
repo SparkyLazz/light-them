@@ -29,6 +29,21 @@ MonoBehaviour:
   m_Active: 1
   raindropMaterial: {fileID: 0}
   renderPassEvent: 550
+--- !u!114 &-324659507719925249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60aea1ee7d3e418199c041f90bdfc0ef, type: 3}
+  m_Name: CurseZoneDistortionFeature
+  m_EditorClassIdentifier: Assembly-CSharp::Shaders.CurseZoneDistortionFeature
+  m_Active: 1
+  curseZoneMaterial: {fileID: 2100000, guid: 751197188761e5545837b12f76d13720, type: 2}
+  renderPassEvent: 550
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55,7 +70,8 @@ MonoBehaviour:
     probeVolumeBlendStatesCS: {fileID: 0}
   m_RendererFeatures:
   - {fileID: 4309838258753809147}
-  m_RendererFeatureMap: fbaa68d40f9fcf3b
+  - {fileID: -324659507719925249}
+  m_RendererFeatureMap: fbaa68d40f9fcf3bff9166d9e5937efb
   m_UseNativeRenderPass: 0
   m_LayerMask:
     serializedVersion: 2

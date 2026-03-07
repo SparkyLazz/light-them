@@ -1,15 +1,4 @@
-﻿// RaindropRenderFeature.cs
-// Unity 6 LTS – Universal Render Pipeline
-//
-// Setup:
-//   1. Create a Material from Custom/Raindrop_URP  (Right-click > Create > Material).
-//   2. Add this Renderer Feature to your URP Renderer asset.
-//   3. Drag the material into the "Raindrop Material" slot.
-//   4. Select the material in the Project window to tweak all shader properties in realtime.
-//
-// Requires "Intermediate Texture" = Always on the URP Renderer asset.
-
-using System;
+﻿using System;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.RenderGraphModule;

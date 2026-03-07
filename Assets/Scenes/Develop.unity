@@ -906,6 +906,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1538975641}
+  - component: {fileID: 1538975642}
+  - component: {fileID: 1538975643}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -929,6 +931,35 @@ Transform:
   - {fileID: 137457764}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1538975642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538975640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88454f7c83747a7a50ca4f42dd4f6e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Shaders.CurseEffect.CurseEffectController
+  curseEffectMaterial: {fileID: 2100000, guid: 751197188761e5545837b12f76d13720, type: 2}
+--- !u!114 &1538975643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538975640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf7a581e5934a3b9c0c998f66e1de61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Shaders.RainDrop.RainDropController
+  rainMaterial: {fileID: 2100000, guid: d07e14081ddf40548a8f36cd9edbff52, type: 2}
+  minDuration: 15
+  maxDuration: 45
+  transitionDuration: 3
 --- !u!1 &1750081324
 GameObject:
   m_ObjectHideFlags: 0
