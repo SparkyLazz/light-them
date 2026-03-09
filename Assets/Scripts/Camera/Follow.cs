@@ -9,6 +9,11 @@ namespace Camera
         public Transform player;
         public float smoothSpeed; 
         public Vector3 offset;
+
+        private void Awake()
+        {
+            player = GameObject.FindGameObjectWithTag("Player").transform;
+        }
         private void Start()
         {
             transform.position = new Vector3(player.position.x + offset.x, transform.position.y, transform.position.z);
