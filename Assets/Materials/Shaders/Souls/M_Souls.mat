@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_Souls
+  m_Shader: {fileID: 4800000, guid: 7a9c528a14cf82941be0d2ebe7844dd5, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BodyRadius: 0.6
+    - _BodyYOffset: 0
+    - _ChromaSplit: 0.3
+    - _FlameDistort: 0.3
+    - _FlameHeight: 0.61
+    - _FlameScale: 6
+    - _FlameSpeed: 6
+    - _FlameTipSharpness: 4.11
+    - _FlameWidth: 0.728
+    - _FlickerSpeed: 11.6
+    - _FlickerStrength: 0.817
+    - _GlitchBlockSize: 0.05
+    - _GlitchIntensity: 0.5
+    - _GlitchSpeed: 10
+    - _GlowIntensity: 3
+    - _GlowRadius: 0.08
+    - _GlowSamples: 12.5
+    - _Sanity: 1
+    - _SpawnDuration: 4
+    - _SpawnScatterScale: 10
+    - _SpawnTime: 0
+    - _TipHeight: 1.46
+    - _TipSharpness: 5
+    - _WispEdgeSoftness: 0.01
+    - _WispNoiseScale: 8
+    - _WispSpeed: 4
+    - _WispStrength: 0
+    m_Colors:
+    - _Color: {r: 1, g: 0.99056596, b: 0.99056596, a: 1}
+    - _CoreColorCorrupt: {r: 0.8061186, g: 0.33570656, b: 0.8679245, a: 1}
+    - _CoreColorPure: {r: 0.95283014, g: 0.97593373, b: 1, a: 1}
+    - _EdgeColorCorrupt: {r: 0.23529413, g: 0.2392157, b: 0.38431376, a: 1}
+    - _EdgeColorPure: {r: 0.45389807, g: 0.9327054, b: 0.9433962, a: 1}
+    - _GlowColorCorrupt: {r: 0.24999997, g: 0, b: 0.34999996, a: 1}
+    - _GlowColorPure: {r: 1, g: 0.85, b: 0.29999998, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
