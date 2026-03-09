@@ -25,21 +25,21 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _ChromaStrength: 0.03
-    - _Desaturation: 1
-    - _DistortionScale: 3
-    - _DistortionSpeed: 4
-    - _DistortionStrength: 0.05
+    - _ChromaStrength: 0.0051
+    - _Desaturation: 0.758
+    - _DistortionScale: 1.19
+    - _DistortionSpeed: 1.2
+    - _DistortionStrength: 0.0053
     - _FogIntensity: 0.328
-    - _GrainSpeed: 5
-    - _GrainStrength: 0.1
-    - _Intensity: 0
-    - _PulseScale: 2
-    - _PulseSpeed: 6
-    - _PulseStrength: 1
-    - _TintStrength: 0.3
-    - _VignetteRadius: 0.7
-    - _VignetteSharpness: 2
+    - _GrainSpeed: 12.9
+    - _GrainStrength: 0.022
+    - _Intensity: 1
+    - _PulseScale: 2.17
+    - _PulseSpeed: 5
+    - _PulseStrength: 0.21
+    - _TintStrength: 0.074
+    - _VignetteRadius: 0.595
+    - _VignetteSharpness: 1.89
     m_Colors:
     - _FogColor: {r: 0.17999998, g: 0, b: 0.37999994, a: 1}
     - _TintColor: {r: 0.14901961, g: 0, b: 0.086042464, a: 1}

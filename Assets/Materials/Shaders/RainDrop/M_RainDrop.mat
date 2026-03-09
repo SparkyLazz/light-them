@@ -43,9 +43,9 @@ Material:
     - _MaxBlur: 12
     - _MinBlur: 4
     - _Quality: 0
-    - _RainAmount: 0
+    - _RainAmount: 0.7
     - _StaticGridScale: 40
-    - _TimeScale: 0
+    - _TimeScale: 2
     - _TrailWidth: 1
     - _VignetteIntensity: 0
     - _WiggleStrength: 1
