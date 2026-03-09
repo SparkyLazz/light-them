@@ -159,6 +159,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47af18b0404a4060a3fb50c29293087e, type: 3}
   m_Name: RaindropRenderFeature
   m_EditorClassIdentifier: Assembly-CSharp::Shaders.RaindropRenderFeature
-  m_Active: 1
+  m_Active: 0
   raindropMaterial: {fileID: 2100000, guid: d07e14081ddf40548a8f36cd9edbff52, type: 2}
   renderPassEvent: 550
