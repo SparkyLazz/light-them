@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3530225863938281387}
   - component: {fileID: 1770124248046401293}
   - component: {fileID: 6535750243669669789}
+  - component: {fileID: 5807265087503542570}
+  - component: {fileID: 7775430300386029613}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -63,6 +65,31 @@ MonoBehaviour:
   minDuration: 15
   maxDuration: 45
   transitionDuration: 3
+--- !u!114 &5807265087503542570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2347371549675907956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526045d80bc342a39b9e582e96ec7779, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Soul.SoulEffectController
+  soulMaterial: {fileID: 2100000, guid: f15b6c54be9540c499f54bd1e4dc8990, type: 2}
+--- !u!114 &7775430300386029613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2347371549675907956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba3eb8c1d703cf74f975e869a70a39b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.GameManager
 --- !u!1 &7197512310764606526
 GameObject:
   m_ObjectHideFlags: 0

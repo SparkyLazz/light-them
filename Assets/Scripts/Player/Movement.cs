@@ -6,7 +6,6 @@ namespace Player
     {
         private static readonly int IsGrounded = Animator.StringToHash("isGrounded");
         private static readonly int Horizontal = Animator.StringToHash("Horizontal");
-
         [Header("Movement Settings")]
         public Rigidbody2D rb;
         public float speed;
@@ -24,6 +23,7 @@ namespace Player
         private bool _isFacingRight = true;
         private bool _jumpPressed;
         private bool _isGrounded;
+        private bool _wasMoving;
 
         private void Start()
         {
@@ -34,6 +34,7 @@ namespace Player
         {   
             // ReSharper disable once Unity.UnknownInputAxes
             _horizontal = Input.GetAxisRaw("Horizontal");
+            
             // ReSharper disable once Unity.UnknownInputAxes
             _jumpPressed = Input.GetButtonDown("Jump");
             
