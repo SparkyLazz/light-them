@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &44528174 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7804855398044874008, guid: 1b9a3ebc4b601c84a8b1bf0b1bf769ac, type: 3}
+  m_PrefabInstance: {fileID: 1038012925}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &112414317 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7449476629555134529, guid: 4845ac967cc51114f975ea8fa499ffb1, type: 3}
@@ -866,13 +871,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7804855398044874008, guid: 1b9a3ebc4b601c84a8b1bf0b1bf769ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1038012931}
   m_SourcePrefab: {fileID: 100100000, guid: 1b9a3ebc4b601c84a8b1bf0b1bf769ac, type: 3}
 --- !u!4 &1038012926 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1745067931103480975, guid: 1b9a3ebc4b601c84a8b1bf0b1bf769ac, type: 3}
   m_PrefabInstance: {fileID: 1038012925}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1038012931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44528174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e7c14108da8490f93225802e0c996c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player.PlayerSoundController
 --- !u!1 &1126006682
 GameObject:
   m_ObjectHideFlags: 0
@@ -1130,24 +1150,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6704878840241148527, guid: 7257c0ab7a51683448a5f221dd4f93e5, type: 3}
   m_PrefabInstance: {fileID: 9050988605576828647}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1538975640 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2347371549675907956, guid: 875a048fac7fce84b9bc20416ae9f7a9, type: 3}
-  m_PrefabInstance: {fileID: 2583837340213578093}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1538975644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1538975640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 526045d80bc342a39b9e582e96ec7779, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Soul.SoulEffectController
-  soulMaterial: {fileID: 2100000, guid: f15b6c54be9540c499f54bd1e4dc8990, type: 2}
 --- !u!1 &1750081324
 GameObject:
   m_ObjectHideFlags: 0
@@ -1464,10 +1466,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2347371549675907956, guid: 875a048fac7fce84b9bc20416ae9f7a9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1538975644}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 875a048fac7fce84b9bc20416ae9f7a9, type: 3}
 --- !u!1001 &7860547514726363343
 PrefabInstance:
