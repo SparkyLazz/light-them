@@ -158,6 +158,7 @@ GameObject:
   - component: {fileID: 3342426028051767988}
   - component: {fileID: 1338794435393679542}
   - component: {fileID: 1504878432956029363}
+  - component: {fileID: 4335899829943788653}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -266,6 +267,9 @@ MonoBehaviour:
   groundCheckTransform: {fileID: 901752635912510406}
   groundCheckBoxSize: {x: 0.1, y: 0.1}
   animator: {fileID: 8861183573402065506}
+  stepInterval: 0.35
+  stepMoveThreshold: 0.1
+  surfaceType: grass
 --- !u!114 &1504878432956029363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,3 +287,29 @@ MonoBehaviour:
   healRate: 10
   yPosition: -10
   isSafe: 0
+  effectFadeOutSpeed: 0.5
+  effectFadeInSpeed: 0.3
+--- !u!114 &4335899829943788653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7804855398044874008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c646fb8b2306462f908825e4c7eaad29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Audio.SanityAudioHandler
+  playerAttribute: {fileID: 1504878432956029363}
+  calmBGM: bgm_calm
+  tenseBGM: bgm_tense
+  heartbeatId: amb_heartbeat
+  whisperId: amb_whisper
+  stingerMidId: sfx_sanity_mid
+  stingerLowId: sfx_sanity_low
+  stingerDeathId: sfx_sanity_death
+  tenseBGMThreshold: 60
+  heartbeatThreshold: 50
+  whisperThreshold: 25
+  bgmCrossfadeDuration: 2
