@@ -309,7 +309,7 @@ MonoBehaviour:
   stingerMidId: sfx_sanity_mid
   stingerLowId: sfx_sanity_low
   stingerDeathId: sfx_sanity_death
-  tenseBGMThreshold: 60
+  tenseBGMThreshold: 80
   heartbeatThreshold: 50
-  whisperThreshold: 25
+  whisperThreshold: 45
   bgmCrossfadeDuration: 2

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6535750243669669789}
   - component: {fileID: 5807265087503542570}
   - component: {fileID: 7775430300386029613}
+  - component: {fileID: 3499791732817376477}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -90,6 +91,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba3eb8c1d703cf74f975e869a70a39b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.GameManager
+--- !u!114 &3499791732817376477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2347371549675907956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc4af87635375ea4fb0f2d6f19f6fd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Audio.SoundManager
+  library: {fileID: 11400000, guid: df1d3d4ff7283a2468d2efe872e5088f, type: 2}
+  masterVolume: 1
+  bgmVolume: 1
+  ambienceVolume: 1
+  sfxVolume: 1
+  uiVolume: 1
+  sfxPoolSize: 8
 --- !u!1 &7197512310764606526
 GameObject:
   m_ObjectHideFlags: 0

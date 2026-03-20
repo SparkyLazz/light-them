@@ -5,26 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="009ed681-40c6-4467-9dfa-a1524e036b7a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/FootstepAudioHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/FootstepAudioHandler.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/SanityAudioHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/SanityAudioHandler.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/SoundData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/SoundData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/SoundLibary.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/SoundLibary.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Light-Them/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Light-Them/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Prefabs/Game Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Prefabs/Game Manager.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Materials/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Prefabs/Save Zone.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Prefabs/Save Zone.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/SFX/Background.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/SFX/Background/Ambient Wind.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/SFX/Background/Ambient Wind.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/SFX/Run/Run.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/SFX/Run/Run.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Shaders/CurseEffect/M_CurseEffect.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Shaders/CurseEffect/M_CurseEffect.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Shaders/Souls/M_Souls.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Shaders/Souls/M_Souls.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Prefabs/Soul.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Prefabs/Soul.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Develop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Develop.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +140,8 @@
       <workItem from="1773296813934" duration="2657000" />
       <workItem from="1773301483046" duration="259000" />
       <workItem from="1773333753311" duration="313000" />
-      <workItem from="1773986412677" duration="4304000" />
+      <workItem from="1773986412677" duration="4591000" />
+      <workItem from="1774015114133" duration="36000" />
     </task>
     <task id="LOCAL-00001">
       <option name="closed" value="true" />
