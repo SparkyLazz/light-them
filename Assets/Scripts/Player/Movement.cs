@@ -1,3 +1,4 @@
+using Audio;
 using UnityEngine;
 
 namespace Player
@@ -18,12 +19,20 @@ namespace Player
 
         [Header("Animation Settings")]
         public Animator animator;
+
+        [Header("Footstep Audio")]
+        [Tooltip("Seconds between footstep sounds while moving")]
+        public float stepInterval = 0.35f;
+        [Tooltip("Minimum horizontal speed to trigger footsteps")]
+        public float stepMoveThreshold = 0.1f;
+        [Tooltip("Default surface type (matches SoundLibrary: footstep_grass)")]
+        public string surfaceType = "grass";
         
         private float _horizontal;
         private bool _isFacingRight = true;
         private bool _jumpPressed;
         private bool _isGrounded;
-        private bool _wasMoving;
+        private float _stepTimer;
 
         private void Start()
         {
@@ -41,6 +50,7 @@ namespace Player
             Flip(_horizontal);
             CheckGround();
             VerticalMove();
+            HandleFootsteps();
             
             animator.SetBool(IsGrounded, _isGrounded);
             animator.SetFloat(Horizontal, Mathf.Abs(rb.linearVelocity.x));
@@ -60,7 +70,7 @@ namespace Player
                 groundCheckBoxSize,
                 0f,
                 Vector2.down,
-                0.1f, // Adjust this to your desired ground detection distance
+                0.1f,
                 groundLayer
             );
         }
@@ -69,6 +79,29 @@ namespace Player
             if (_isGrounded && _jumpPressed)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jump);
+            }
+        }
+
+        private void HandleFootsteps()
+        {
+            if (!_isGrounded || SoundManager.Instance == null)
+            {
+                _stepTimer = 0f;
+                return;
+            }
+
+            bool isMoving = Mathf.Abs(rb.linearVelocity.x) > stepMoveThreshold;
+            if (!isMoving)
+            {
+                _stepTimer = 0f;
+                return;
+            }
+
+            _stepTimer += Time.deltaTime;
+            if (_stepTimer >= stepInterval)
+            {
+                _stepTimer = 0f;
+                SoundManager.Instance.PlayFootstep(surfaceType);
             }
         }
 

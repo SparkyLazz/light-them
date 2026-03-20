@@ -119,11 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &44528174 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7804855398044874008, guid: 1b9a3ebc4b601c84a8b1bf0b1bf769ac, type: 3}
-  m_PrefabInstance: {fileID: 1038012925}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &112414317 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7449476629555134529, guid: 4845ac967cc51114f975ea8fa499ffb1, type: 3}
@@ -816,6 +811,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1338794435393679542, guid: 1b9a3ebc4b601c84a8b1bf0b1bf769ac, type: 3}
+      propertyPath: stepInterval
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 1504878432956029363, guid: 1b9a3ebc4b601c84a8b1bf0b1bf769ac, type: 3}
       propertyPath: maxUnsafeTime
       value: 60
@@ -860,6 +859,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4335899829943788653, guid: 1b9a3ebc4b601c84a8b1bf0b1bf769ac, type: 3}
+      propertyPath: whisperThreshold
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4335899829943788653, guid: 1b9a3ebc4b601c84a8b1bf0b1bf769ac, type: 3}
+      propertyPath: tenseBGMThreshold
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 7804855398044874008, guid: 1b9a3ebc4b601c84a8b1bf0b1bf769ac, type: 3}
       propertyPath: m_Name
       value: Player
@@ -871,28 +878,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7804855398044874008, guid: 1b9a3ebc4b601c84a8b1bf0b1bf769ac, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1038012931}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b9a3ebc4b601c84a8b1bf0b1bf769ac, type: 3}
 --- !u!4 &1038012926 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1745067931103480975, guid: 1b9a3ebc4b601c84a8b1bf0b1bf769ac, type: 3}
   m_PrefabInstance: {fileID: 1038012925}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1038012931
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 44528174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e7c14108da8490f93225802e0c996c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Player.PlayerSoundController
 --- !u!1 &1126006682
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,6 +969,30 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &1178316853 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2347371549675907956, guid: 875a048fac7fce84b9bc20416ae9f7a9, type: 3}
+  m_PrefabInstance: {fileID: 2583837340213578093}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1178316859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178316853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc4af87635375ea4fb0f2d6f19f6fd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Audio.SoundManager
+  library: {fileID: 11400000, guid: df1d3d4ff7283a2468d2efe872e5088f, type: 2}
+  masterVolume: 1
+  bgmVolume: 1
+  ambienceVolume: 1
+  sfxVolume: 1
+  uiVolume: 1
+  sfxPoolSize: 8
 --- !u!1 &1212357782
 GameObject:
   m_ObjectHideFlags: 0
@@ -1466,7 +1482,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2347371549675907956, guid: 875a048fac7fce84b9bc20416ae9f7a9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1178316859}
   m_SourcePrefab: {fileID: 100100000, guid: 875a048fac7fce84b9bc20416ae9f7a9, type: 3}
 --- !u!1001 &7860547514726363343
 PrefabInstance:

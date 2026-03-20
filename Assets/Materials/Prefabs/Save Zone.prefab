@@ -91,3 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45ff78518f914b8e81a516d5bc5f551c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.SafeZone
+  ambienceId: wind
+  fadeInDuration: 30
+  fadeOutDuration: 5
+  exclusiveAmbience: 1

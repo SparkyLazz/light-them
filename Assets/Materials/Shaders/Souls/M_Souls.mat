@@ -46,7 +46,7 @@ Material:
     - _GlowIntensity: 3
     - _GlowRadius: 0.08
     - _GlowSamples: 12.5
-    - _Sanity: 0
+    - _Sanity: 1
     - _SpawnDuration: 4
     - _SpawnScatterScale: 10
     - _SpawnTime: 0
