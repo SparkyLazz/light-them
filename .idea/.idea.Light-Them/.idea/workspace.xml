@@ -5,26 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="009ed681-40c6-4467-9dfa-a1524e036b7a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/FootstepAudioHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/FootstepAudioHandler.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/SanityAudioHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/SanityAudioHandler.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/SoundData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/SoundData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/SoundLibary.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/SoundLibary.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Light-Them/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Light-Them/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Prefabs/Save Zone.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Prefabs/Save Zone.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/SFX/Background.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/SFX/Background/Ambient Wind.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/SFX/Background/Ambient Wind.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/SFX/Run/Run.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/SFX/Run/Run.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Pixel Art/background_0.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Pixel Art/background_0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Pixel Art/background_0.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Pixel Art/background_0.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Pixel Art/background_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Pixel Art/background_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Pixel Art/background_1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Pixel Art/background_1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Pixel Art/background_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Pixel Art/background_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Pixel Art/background_2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Pixel Art/background_2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Prefabs/ParallaxBackground.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Prefabs/ParallaxBackground.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Materials/Shaders/CurseEffect/M_CurseEffect.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Shaders/CurseEffect/M_CurseEffect.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Materials/Shaders/Souls/M_Souls.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Shaders/Souls/M_Souls.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Develop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Develop.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parallax/InfiniteParallax.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parallax/InfiniteParallax.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parallax/ParallaxLayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parallax/ParallaxLayer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,15 +42,18 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Materials/Shaders/CurseEffect/CurseEffect.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Materials/Shaders/Parallax/Parallax.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Materials/Shaders/RainDrop/RainDrop.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/FootstepAudioHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/SanityAudioHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/SoundData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/SoundLibary.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/SafeZone.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Parallax/InfiniteParallax.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Parallax/ParallaxLayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Attribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/CurseEffect/CurseEffectController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/RainDrop/RainDropController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Soul/Follow.cs" root0="FORCE_HIGHLIGHTING" />
@@ -72,25 +69,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;playerInteraction&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\Applications\Unity Hub\Unity Editor\6000.3.10f1\Editor\Unity.exe" />
