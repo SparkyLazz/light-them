@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Audio.SoundData
   id: sfx_sanity_low
   clips:
-  - {fileID: 8300000, guid: 7a3b9bcfae22bde4d9ab792f64eeffa1, type: 3}
+  - {fileID: 8300000, guid: 6bd650259b0906349ba58aced229fffa, type: 3}
   volume: 0.5
   pitch: 1
   randomPitch: 0

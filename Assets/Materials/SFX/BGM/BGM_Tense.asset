@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Audio.SoundData
   id: bgm_tense
   clips:
-  - {fileID: 8300000, guid: 5a70c78e8e0e27f409ccba08e61a528d, type: 3}
+  - {fileID: 8300000, guid: 6bd650259b0906349ba58aced229fffa, type: 3}
   volume: 0.5
   pitch: 1
   randomPitch: 0

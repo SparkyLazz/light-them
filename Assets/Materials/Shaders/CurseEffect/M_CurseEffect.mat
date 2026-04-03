@@ -33,7 +33,7 @@ Material:
     - _FogIntensity: 0.328
     - _GrainSpeed: 12.9
     - _GrainStrength: 0.022
-    - _Intensity: 0
+    - _Intensity: 0.014
     - _PulseScale: 2.17
     - _PulseSpeed: 5
     - _PulseStrength: 0.21
